@@ -1,7 +1,7 @@
 extends layout/main.pug
 
 append content
-    h2.col-12.mt-5 Editar Libro : #{productSizes[0].title}
+    h2.col-12.mt-5 Agregar Libro : #{productSizes[0].title}
     hr
     form(method="POST" action="/dashboard/product/save" enctype="multipart/form-data")
         .row.justify-content-center.mt-5

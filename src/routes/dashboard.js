@@ -225,5 +225,12 @@ function authenticateAdmin() {
 	    res.redirect('/dashboard/forbidden')
 	}
 }
+// Products add page
+router.get("/products/add", authenticateEmployee(), async (req, res) => {
+
+    //Mani yo lo intente pero no pude, nose ni monda de esto
+
+    res.render(`${config.views}/dashboard/addProduct.pug`, {productSizes: productSizes});
+});
 
 module.exports = router;
